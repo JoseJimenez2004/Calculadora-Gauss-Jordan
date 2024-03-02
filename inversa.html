@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Matriz Inversa</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.7.1/math.min.js"></script>
+    <link rel="icon" href="/img/raiz-cuadrada.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styleinversa.css">
+    <link rel="stylesheet" href="assets/css/styles3.css">
+    <link rel="stylesheet" href="assets/css/appsistema.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.7.0/math.js"></script>
+</head>
+<body>
+    <a href="index.html" class="boton-inicio">Volver al Inicio</a>
+    <div class="x">
+        <h1>Inversa de Matrices</h1>
+        <div class="x">
+            <button onclick="iniciarTemporizador()">Iniciar Temporizador</button>
+            <div id="temporizador"></div>
+        </div>
+    <div class="container">
+        <label for="matrixSize">Seleccionar dimensión:</label>
+        <select id="matrixSize">
+            <option value="2">2x2</option>
+            <option value="3">3x3</option>
+            <option value="4">4x4</option>
+        </select>
+    
+        <button onclick="createMatrix()">Crear Matriz</button>
+    
+        <div id="matrixDiv"></div>
+    
+        <div id="resultDiv"></div>
+    </div>
+    <script>
+        function incrementarContador(id) {
+            const contador = document.getElementById(id);
+            contador.textContent = parseInt(contador.textContent) + 1;
+        }
+
+        let tiempoRestante;
+
+        function iniciarTemporizador() {
+            const tiempoIngresado = parseInt(prompt("Ingrese el tiempo en segundos:"));
+
+            if (!isNaN(tiempoIngresado)) {
+                tiempoRestante = tiempoIngresado;
+                actualizarTemporizador();
+
+                const interval = setInterval(function () {
+                    if (tiempoRestante > 0) {
+                        tiempoRestante--;
+                        actualizarTemporizador();
+                    } else {
+                        clearInterval(interval); // Detener el intervalo
+                        desactivarEntradas();
+                    }
+                }, 1000);
+            } else {
+                alert("Por favor, ingrese un número válido.");
+            }
+        }
+
+        function actualizarTemporizador() {
+            document.getElementById("temporizador").innerText = `Tiempo restante: ${tiempoRestante} segundos`;
+        }
+
+        function desactivarEntradas() {
+            const inputs = document.querySelectorAll('input[type="text"]');
+            inputs.forEach(input => {
+                input.disabled = true;
+            });
+            alert("¡Tiempo agotado! Puedes volver a habilitar la escritura al hacer clic en OK.");
+        }
+    </script>
+    <script src="assets/js/inversa.js"></script>
+</body>
+</html>

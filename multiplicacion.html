@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.lvgl.io/v8.0.2/lv.min.js"></script>
+    <link rel="stylesheet" href="assets/css/styles3.css">
+    <link rel="stylesheet" href="assets/css/appsistema.css">
+    <link rel="stylesheet" href="assets/css/stylemultiplicacion.css">
+        <link rel="icon" href="/img/raiz-cuadrada.png" type="image/x-icon">
+    <title>Calculadora de Matrices</title>
+</head>
+<body>
+    <a href="index.html" class="boton-inicio">Volver al Inicio</a>
+    <div class="x">
+        <h1>Producto de Matrices</h1>
+        <div class="x">
+            <button onclick="iniciarTemporizador()">Iniciar Temporizador</button>
+            <div id="temporizador"></div>
+        </div>
+    <div id="content">
+        <div>
+            <label for="matrixDimension">Elija la dimensión de la matriz:</label>
+            <select id="matrixDimension">
+                <option value="2x2">2x2</option>
+                <option value="3x3">3x3</option>
+                <option value="4x4">4x4</option>
+            </select>
+        </div>
+
+        <div id="matrixInputValues" style="display: none;">
+            <h2>Ingrese los datos de las matrices:</h2>
+            <h3>Matriz A</h3>
+
+            <div id="matrixInputsA">
+                <!-- Aquí se genera la tabla de inputs de la matriz A-->
+            </div>
+                <br>
+            <h3>Matriz B</h3>
+            <div id="matrixInputsB">
+                <!-- Aquí se genera la tabla de inputs de la matriz B -->
+            </div> 
+        </div>
+
+        <div id="matricesContainer">
+            <!-- Aquí se mostrará la tabla de resultados -->
+        </div>
+
+        <div id="sidebar">
+            <button id="btnMultiplicacionMatrices">Multiplicación de Matrices</button>
+        </div>
+    </div>
+    <script>
+        function incrementarContador(id) {
+            const contador = document.getElementById(id);
+            contador.textContent = parseInt(contador.textContent) + 1;
+        }
+
+        let tiempoRestante;
+
+        function iniciarTemporizador() {
+            const tiempoIngresado = parseInt(prompt("Ingrese el tiempo en segundos:"));
+
+            if (!isNaN(tiempoIngresado)) {
+                tiempoRestante = tiempoIngresado;
+                actualizarTemporizador();
+
+                const interval = setInterval(function () {
+                    if (tiempoRestante > 0) {
+                        tiempoRestante--;
+                        actualizarTemporizador();
+                    } else {
+                        clearInterval(interval); // Detener el intervalo
+                        desactivarEntradas();
+                    }
+                }, 1000);
+            } else {
+                alert("Por favor, ingrese un número válido.");
+            }
+        }
+
+        function actualizarTemporizador() {
+            document.getElementById("temporizador").innerText = `Tiempo restante: ${tiempoRestante} segundos`;
+        }
+
+        function desactivarEntradas() {
+            const inputs = document.querySelectorAll('input[type="text"]');
+            inputs.forEach(input => {
+                input.disabled = true;
+            });
+            alert("¡Tiempo agotado! Puedes volver a habilitar la escritura al hacer clic en OK.");
+        }
+    </script>
+
+    <script src="assets/js/scriptmultiplicacion.js"></script>
+</body>
+</html>

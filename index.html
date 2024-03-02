@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> MatrixMinds</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  button {
+      padding: 15px 20px; /* Ajusta el padding según el tamaño que desees */
+      font-size: 16px;
+      background-color: transparent; /* Fondo transparente */
+      color: #3498db; /* Color del texto */
+      border: 2px solid #fff; /* Borde blanco */
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3498db; /* Fondo azul al pasar el ratón */
+      color: #fff; /* Texto blanco al pasar el ratón */
+      border-color: #3498db; /* Borde azul al pasar el ratón */
+    }
+  </style>
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="assets/img/logo.png" alt="">
+    <p>MatrixMinds</p>
+  </a>
+  <p class="device-notification--message">Tenemos tanto que ofrecer que debemos solicitarle que oriente su dispositivo en posición vertical o busque una pantalla más grande. No te decepcionarás.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="#0">
+            <img src="assets/img/logo.png" alt="">
+            
+          </a>
+          <button class="header--cta cta"><a href="">Da clic en la Imagen</a></button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Inicio</span></li>
+            <li><span>Recursos</span></li>
+            <li><span>Graficador</span></li>
+            <li><span>Conceptos</span></li>
+            <li class=" "><span>Matriz</span></li>
+            <li><span>Determinante</span></li>
+            <li><span>Inversa</span></li>
+            <li><span>Suma de Matrices</span></li>
+            <li><span>Producto de Matrices</span></li>
+            <li><span>Gauss-Jordan</span></li>
+            <li><span>Libros de Apoyo</span></li>
+
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Aprende<br>Jugando<br>Con Nosotros</h1>
+                <button ><a href="sistemaecuaciones.html"> Iniciar</a>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+                <img src="assets/img/introduction-visual.png" alt="Welcome">
+              </div>
+              <div class="intro--options">
+                <a href="#0">
+                  <h3>Mayor compromiso y motivación</h3>
+                  <p>Al ser más atractivos y divertidos que las lecciones tradicionales.</p>
+                </a>
+                <a href="#0">
+                  <h3>Desarrollo de habilidades cognitivas</h3>
+                  <p>Los juegos matemáticos a menudo requieren pensamiento estratégico, resolución de problemas y toma de decisiones.</p>
+                </a>
+                <a href="#0">
+                  <h3>Fomento del trabajo en equipo </h3>
+                  <p>Muchos juegos matemáticos se juegan en grupo, lo que fomenta el trabajo en equipo y la colaboración.</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Recursos Didacticos</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <a href="determinante.html"><img src="assets/img/work-victory.jpg" alt="Victory"></a>
+                      </div>
+                      <p class="slider--item-title">Determinantes de Matrices</p>
+                      <p class="slider--item-description">SSon clave para entender la escalabilidad y la inversibilidad en el álgebra lineal.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <a href="inversa.html"><img src="assets/img/work-victory2.jpg" alt="Victory"></a>
+                      </div>
+                      <p class="slider--item-title">Inversa de Matrices</p>
+                      <p class="slider--item-description">Es desentrañar su esencia numérica, revelando el camino inverso a través de sus entrelazadas dimensiones.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <a href="multiplicacion.html"><img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith"></a>
+                      </div>
+                      <p class="slider--item-title">Multiplicacion de Matrices</p>
+                      <p class="slider--item-description">Donde la combinación de elementos crea nuevas posibilidades.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <a href="suma.html"><img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak"></a>
+                      </div>
+                      <p class="slider--item-title">Suma de Matrices</p>
+                      <p class="slider--item-description">Es la armonía matemática que fusiona elementos correspondientes en una danza numérica.</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+                <h2>Viualiza<br>Como se ve<br>tu sistema<br>de ecuaciones</h2>
+                <a href="graficador.html"> Graficador de 2x2
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                <img src="assets/img/about-visual.png" alt="About Us">
+              </div>
+             
+            </div>
+          </li>
+          
+          <li class="l-section section">
+            <div class="hire">
+              <h2>Matriz</h2>
+              <form class="work-request">
+              <div class="work-request--options">
+                <span class="options-a">
+                  <input id="opt-1" type="checkbox" value="app design" onclick="mostrarInformacion('Matriz', event)">
+                  <button type="button" onclick="mostrarInformacion('Matriz', event)">Matriz</button>
+                  <button type="button" onclick="mostrarInformacion('Determinante', event)">Determinante</button>
+                  <button type="button" onclick="mostrarInformacion('Inversa', event)">Inversa</button>
+                  <button type="button" onclick="mostrarInformacion('Suma de Matrices', event)">Suma de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Multiplicacion de Matrices', event)">Multiplicacion de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Gauss-Jordan', event)">Gauss-Jordan</button>
+                  <button type="button" onclick="mostrarInformacion('Libros', event)">Libros</button>
+                  <button type="button" onclick="mostrarInformacion('Videos', event)">Videos de Apoyo</button>                  
+                </span>
+              </div>            
+            </form>
+            </div>           
+          </li>
+
+          <li class="l-section section">
+            <div class="hire">
+              <h2>Conceptos Importantes</h2>
+              <form class="work-request">
+              <div class="work-request--options">
+                <span class="options-a">
+                  <input id="opt-1" type="checkbox" value="app design" onclick="mostrarInformacion('Matriz', event)">
+                  <button type="button" onclick="mostrarInformacion('Matriz', event)">Matriz</button>
+                  <button type="button" onclick="mostrarInformacion('Determinante', event)">Determinante</button>
+                  <button type="button" onclick="mostrarInformacion('Inversa', event)">Inversa</button>
+                  <button type="button" onclick="mostrarInformacion('Suma de Matrices', event)">Suma de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Multiplicacion de Matrices', event)">Multiplicacion de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Gauss-Jordan', event)">Gauss-Jordan</button>
+                  <button type="button" onclick="mostrarInformacion('Libros', event)">Libros</button>
+                  <button type="button" onclick="mostrarInformacion('Videos', event)">Videos de Apoyo</button>                  
+                </span>
+              </div>            
+            </form>
+            </div>           
+          </li>
+
+          <li class="l-section section">
+            <div class="hire">
+              <h2>Conceptos Importantes</h2>
+              <form class="work-request">
+              <div class="work-request--options">
+                <span class="options-a">
+                  <input id="opt-1" type="checkbox" value="app design" onclick="mostrarInformacion('Matriz', event)">
+                  <button type="button" onclick="mostrarInformacion('Matriz', event)">Matriz</button>
+                  <button type="button" onclick="mostrarInformacion('Determinante', event)">Determinante</button>
+                  <button type="button" onclick="mostrarInformacion('Inversa', event)">Inversa</button>
+                  <button type="button" onclick="mostrarInformacion('Suma de Matrices', event)">Suma de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Multiplicacion de Matrices', event)">Multiplicacion de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Gauss-Jordan', event)">Gauss-Jordan</button>
+                  <button type="button" onclick="mostrarInformacion('Libros', event)">Libros</button>
+                  <button type="button" onclick="mostrarInformacion('Videos', event)">Videos de Apoyo</button>                  
+                </span>
+              </div>            
+            </form>
+            </div>           
+          </li>
+
+          <li class="l-section section">
+            <div class="hire">
+              <h2>Conceptos Importantes</h2>
+              <form class="work-request">
+              <div class="work-request--options">
+                <span class="options-a">
+                  <input id="opt-1" type="checkbox" value="app design" onclick="mostrarInformacion('Matriz', event)">
+                  <button type="button" onclick="mostrarInformacion('Matriz', event)">Matriz</button>
+                  <button type="button" onclick="mostrarInformacion('Determinante', event)">Determinante</button>
+                  <button type="button" onclick="mostrarInformacion('Inversa', event)">Inversa</button>
+                  <button type="button" onclick="mostrarInformacion('Suma de Matrices', event)">Suma de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Multiplicacion de Matrices', event)">Multiplicacion de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Gauss-Jordan', event)">Gauss-Jordan</button>
+                  <button type="button" onclick="mostrarInformacion('Libros', event)">Libros</button>
+                  <button type="button" onclick="mostrarInformacion('Videos', event)">Videos de Apoyo</button>                  
+                </span>
+              </div>            
+            </form>
+            </div>           
+          </li>
+
+
+          <li class="l-section section">
+            <div class="hire">
+              <h2>Conceptos Importantes</h2>
+              <form class="work-request">
+              <div class="work-request--options">
+                <span class="options-a">
+                  <input id="opt-1" type="checkbox" value="app design" onclick="mostrarInformacion('Matriz', event)">
+                  <button type="button" onclick="mostrarInformacion('Matriz', event)">Matriz</button>
+                  <button type="button" onclick="mostrarInformacion('Determinante', event)">Determinante</button>
+                  <button type="button" onclick="mostrarInformacion('Inversa', event)">Inversa</button>
+                  <button type="button" onclick="mostrarInformacion('Suma de Matrices', event)">Suma de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Multiplicacion de Matrices', event)">Multiplicacion de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Gauss-Jordan', event)">Gauss-Jordan</button>
+                  <button type="button" onclick="mostrarInformacion('Libros', event)">Libros</button>
+                  <button type="button" onclick="mostrarInformacion('Videos', event)">Videos de Apoyo</button>                  
+                </span>
+              </div>            
+            </form>
+            </div>           
+          </li>
+
+
+          <li class="l-section section">
+            <div class="hire">
+              <h2>Conceptos Importantes</h2>
+              <form class="work-request">
+              <div class="work-request--options">
+                <span class="options-a">
+                  <input id="opt-1" type="checkbox" value="app design" onclick="mostrarInformacion('Matriz', event)">
+                  <button type="button" onclick="mostrarInformacion('Matriz', event)">Matriz</button>
+                  <button type="button" onclick="mostrarInformacion('Determinante', event)">Determinante</button>
+                  <button type="button" onclick="mostrarInformacion('Inversa', event)">Inversa</button>
+                  <button type="button" onclick="mostrarInformacion('Suma de Matrices', event)">Suma de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Multiplicacion de Matrices', event)">Multiplicacion de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Gauss-Jordan', event)">Gauss-Jordan</button>
+                  <button type="button" onclick="mostrarInformacion('Libros', event)">Libros</button>
+                  <button type="button" onclick="mostrarInformacion('Videos', event)">Videos de Apoyo</button>                  
+                </span>
+              </div>            
+            </form>
+            </div>           
+          </li>
+
+
+          <li class="l-section section">
+            <div class="hire">
+              <h2>Conceptos Importantes</h2>
+              <form class="work-request">
+              <div class="work-request--options">
+                <span class="options-a">
+                  <input id="opt-1" type="checkbox" value="app design" onclick="mostrarInformacion('Matriz', event)">
+                  <button type="button" onclick="mostrarInformacion('Matriz', event)">Matriz</button>
+                  <button type="button" onclick="mostrarInformacion('Determinante', event)">Determinante</button>
+                  <button type="button" onclick="mostrarInformacion('Inversa', event)">Inversa</button>
+                  <button type="button" onclick="mostrarInformacion('Suma de Matrices', event)">Suma de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Multiplicacion de Matrices', event)">Multiplicacion de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Gauss-Jordan', event)">Gauss-Jordan</button>
+                  <button type="button" onclick="mostrarInformacion('Libros', event)">Libros</button>
+                  <button type="button" onclick="mostrarInformacion('Videos', event)">Videos de Apoyo</button>                  
+                </span>
+              </div>            
+            </form>
+            </div>           
+          </li>
+
+          <li class="l-section section">
+            <div class="hire">
+              <h2>Conceptos Importantes</h2>
+              <form class="work-request">
+              <div class="work-request--options">
+                <span class="options-a">
+                  <input id="opt-1" type="checkbox" value="app design" onclick="mostrarInformacion('Matriz', event)">
+                  <button type="button" onclick="mostrarInformacion('Matriz', event)">Matriz</button>
+                  <button type="button" onclick="mostrarInformacion('Determinante', event)">Determinante</button>
+                  <button type="button" onclick="mostrarInformacion('Inversa', event)">Inversa</button>
+                  <button type="button" onclick="mostrarInformacion('Suma de Matrices', event)">Suma de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Multiplicacion de Matrices', event)">Multiplicacion de Matrices</button>
+                  <button type="button" onclick="mostrarInformacion('Gauss-Jordan', event)">Gauss-Jordan</button>
+                  <button type="button" onclick="mostrarInformacion('Libros', event)">Libros</button>
+                  <button type="button" onclick="mostrarInformacion('Videos', event)">Videos de Apoyo</button>                  
+                </span>
+              </div>            
+            </form>
+            </div>           
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Inicio</li>
+    <li>Recursos</li>
+    <li>Graficador</li>    
+    <li>Conceptos</li>
+    <li>Matriz</li>
+    <li>Determinante</li>
+    <li>Inversa</li>
+    <li>Suma de Matrices</li>
+    <li>Producto de Matrices</li>
+    <li>Gauss-Jordan</li>
+    <li>Libros de Apoyo</li>
+  </ul>
+</div>
+
+<script>
+function mostrarInformacion(opcion, event) {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado del checkbox
+
+      switch (opcion) {
+      case 'Matriz':
+        alert("Una matriz es un arreglo rectangular de números. Los números del arreglo se conocen como elementos de la matriz.\n\nEl tamaño de una matriz se describe especificando el número de renglones (Líneas horizontales) y columnas (Líneas verticales) que se presentan en ella. El primer número siempre indica el número de renglones y el segundo el número de columnas. Así entonces las matrices restantes del ejemplo tienen los tamaños 3X2, 1X4, 3X3, 2X1, y 1X1.");
+        break;
+      case 'Determinante':
+        alert("Dada una matriz cuadrada A de tamaño nxn, la función determinante, denotada por detA o |A|, se define como la suma de todos los productos elementales con signos tomados de A.");
+        break;
+      case 'Inversa':
+        alert("Si A es una matriz cuadrada cualquiera y si es posible hallar una matriz B tal que, AB=BA=I, entonces se dice que A es invertible y B se conoce como su inversa. Las matrices invertibles también se conocen como matrices no singulares.");
+        break;
+      case 'Suma de Matrices':
+        alert("Si A y B son dos matrices ambas de tamaño mxn, entonces la suma de A y B, denotado por A + B, es la matriz de tamaño mxn cuyos elementos se obtienen sumando los elementos correspondientes de las matrices A y B.");
+        break;
+      case 'Multiplicacion de Matrices':
+        alert("Si A y B son matrices de tamaños mxr y rxn, respectivamente, entonces el producto matricial de A y B, denotado por AB, es la matriz de tamaño mxn cuyos elementos se determinan de la siguiente manera. - https://youtu.be/8f7UUnbLqp0?list=PLIb_io8a5NB2DddFf-PwvZDCOUNT1GZoA");
+        break;
+      case 'Gauss-Jordan':
+        alert("El método básico para resolver sistemas de ecuaciones lineales consiste en reemplazar el sistema dado por uno nuevo que tenga el mismo conjunto solución, pero que sea más fácil de resolver. En general, este nuevo sistema se obtiene realizando una serie de pasos, en cada uno de los cuales se aplica una de las siguientes operaciones permitidas, conocidas como operaciones elementales, a fin de eliminar sistemáticamente las incógnitas.");
+        break;
+      case 'Libros':
+        alert("Para acceder a los libros de apoyo ingresa al siguiente link: https://app.box.com/s/36qiox66vg4kq3ufy8bs");
+        break;
+        case 'Videos':
+        alert("- Multiplicacion de matrices\n\n\
+          - https://youtu.be/8f7UUnbLqp0?list=PLIb_io8a5NB2DddFf-PwvZDCOUNT1GZoA -- Multiplicacion matricial como composicion\n\n\
+          - Determinantes\n\n\
+            - https://youtu.be/ckeT2SIszgo -- Propiedades de los determinantes\n\
+            - https://youtu.be/yt3eoYvGel0 -- El determinante\n\
+            - https://youtu.be/T0qRVezAImM -- ¿Que son los determinantes?\n\
+            - https://youtu.be/GPhTBWDqEBw -- Que son y para que sirven los determinantes\n\n\
+          - Espacios Vectoriales\n\n\
+            - https://youtu.be/h_mXuYQOGDc -- Espacios vectoriales\n\
+            - https://youtu.be/q6IQJA8qvok?list=PLunRFUHsCA1xChejzq_1Bkls-BhnIbX5f -- Espacios vectoriales, ¿que es un espacio vectorial?\n\
+            - https://youtu.be/msw1vhcvK6Y -- Espacios y subespacios vectoriales\n\
+            - https://youtu.be/wiuEEkP_XuM -- Vectores, ¿que son?\n\n\
+          - Bases y combinaciones lineales\n\n\
+            - https://youtu.be/RqQqFx4xUjk -- Combinaciones lineales, subespacio generado y bases\n\
+            - https://youtu.be/LYlaRDsi_T8?list=PLIb_io8a5NB2DddFf-PwvZDCOUNT1GZoA -- Cambio de base");
+        break;
+      default:
+        break;            
+      }
+    }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+</body>
+</html>

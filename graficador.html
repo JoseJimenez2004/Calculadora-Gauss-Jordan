@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Graficador</title>
+  <link rel="stylesheet" href="assets/css/stylegraf.css">
+  <link rel="stylesheet" href="assets/css/styles3.css">
+  <link rel="stylesheet" href="assets/css/appsistema.css">
+  <link rel="icon" href="/img/raiz-cuadrada.png" type="image/x-icon">
+</head>
+<body>
+<a href="index.html" class="boton-inicio">Volver al Inicio</a>
+  <div class="container">
+    <h1>Sistema de Ecuaciones 2x2</h1>
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+      <div class="equation-container">
+        <div class="equation">
+          <h2>Ecuacion 1</h2>
+          <label for="texto-a1">x1:</label>
+          <input type="text" id="texto-a1" placeholder="Ingrese">
+
+          <label for="texto-b1">x2:</label>
+          <input type="text" id="texto-b1" placeholder="Ingrese">
+
+          <label for="texto-c1"> =</label>
+          <input type="text" id="texto-c1" placeholder="Ingrese">
+        </div>
+
+        <div class="equation">
+          <h2>Ecuacion 2</h2>
+          <label for="texto-a2">x1:</label>
+          <input type="text" id="texto-a2" placeholder="Ingrese">
+
+          <label for="texto-b2">x2:</label>
+          <input type="text" id="texto-b2" placeholder="Ingrese">
+
+          <label for="texto-c2"> =</label>
+          <input type="text" id="texto-c2" placeholder="Ingrese">
+        </div>
+      </div>
+
+    <button onclick="graficarSistema()">Graficar</button>
+  </div>
+
+  <script src="assets/js/scriptgraf.js"></script>
+</body>
+</html>
